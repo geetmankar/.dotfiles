@@ -5,7 +5,7 @@
 # https://github.com/chubin/cheat.sh
 #
 
-selected=$( cat ~/.tmux-cht-languages ~/.tmux-cht-command | fzf )
+selected=$( cat ~/.config/tmux/.tmux-cht-languages ~/.config/tmux/.tmux-cht-command | fzf )
 if [[ -z $selected ]]; then
     exit 0
 fi
@@ -13,7 +13,8 @@ fi
 read -p -r "Enter Query: " query
 # read -p "Enter Query: " query
 
-if grep -qs "$selected" ~/.tmux-cht-languages; then
+# if grep -qs "$selected" ~/.config/tmux/.tmux-cht-languages; then
+if rg -qs "$selected" ~/.config/tmux/.tmux-cht-languages; then
     query=$( echo "$query" | tr ' ' '+' )
     tmux neww bash -c "echo \"curl cht.sh/$selected/$query/\" & curl cht.sh/$selected/$query & while [ : ]; do sleep 1; done"
 else
