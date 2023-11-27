@@ -10,10 +10,9 @@ if [[ -z $selected ]]; then
     exit 0
 fi
 
-read -p -r "Enter Query: " query
-# read -p "Enter Query: " query
+# read -p -r "Enter Query: " query
+read -p "Enter Query: " query
 
-# if grep -qs "$selected" ~/.config/tmux/.tmux-cht-languages; then
 if rg -qs "$selected" ~/.config/tmux/.tmux-cht-languages; then
     query=$( echo "$query" | tr ' ' '+' )
     tmux neww bash -c "echo \"curl cht.sh/$selected/$query/\" & curl cht.sh/$selected/$query & while [ : ]; do sleep 1; done"
