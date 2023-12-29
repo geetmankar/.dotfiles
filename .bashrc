@@ -120,7 +120,7 @@ fi
 source /etc/profile.d/bash_completion.sh
 
 source /usr/share/bash-completion/completions/git
-__git_complete config __git_main
+__git_complete dotfiles __git_main
 ## EXTRACT FUNCTION
 ###########################################################################
 SAVEIFS=$IFS
