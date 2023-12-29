@@ -24,11 +24,11 @@ alias cat='batcat'
 alias update='sudo nala update && sudo nala upgrade -y && sudo snap refresh'
 alias python='python3'
 
-alias count='ls * | wc -l'
+alias countf='ls * | wc -l'
 alias ex='chmod +x'
 
 alias dotfiles='/usr/bin/git --git-dir="$HOME/.dotfiles/" --work-tree="$HOME"'
-alias linuxpath='echo $PATH | tr : "\n" | rg -v "mnt"'
+alias Path='echo $PATH | tr : "\n" | rg -v "mnt"'
 
 addToPath() {
     if [[ "$PATH" != *"$1"* ]]; then
