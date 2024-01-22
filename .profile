@@ -32,7 +32,6 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export STARSHIP_CONFIG=~/.config/starship.toml
 eval "$(starship init bash)"
 eval "$(register-python-argcomplete pipx)"
-eval $(thefuck --alias)
 
 source /etc/profile.d/bash_completion.sh
 
