@@ -13,14 +13,14 @@
 [credential "https://gist.github.com"]
 	helper = !gh auth git-credential
 
-; [includeIf "hasconfig:remote.*.url:git@github.com:**/**"]
-;     path = "~/.gitconfig-personal"
-;
-; [includeIf "hasconfig:remote.*.url:https://github.com/**/**"]
-;     path = "~/.gitconfig-personal" 
-;
-; [includeIf "hasconfig:remote.*.url:git@gitlab.com:**/**"]
-;     path = "~/.gitconfig-work"
-;
-; [includeIf "hasconfig:remote.*.url:https://gitlab.com/**/**"]
-;     path = "~/.gitconfig-work" 
+[includeIf "hasconfig:remote.*.url:git@github.com:**/**"]
+    path = "~/.gitconfig-personal"
+
+[includeIf "hasconfig:remote.*.url:https://github.com/**/**"]
+    path = "~/.gitconfig-personal" 
+
+[includeIf "hasconfig:remote.*.url:git@gitlab.com:**/**"]
+    path = "~/.gitconfig-work"
+
+[includeIf "hasconfig:remote.*.url:https://gitlab.com/**/**"]
+    path = "~/.gitconfig-work" 
