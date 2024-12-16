@@ -1,0 +1,5 @@
+;[credential "https://git.uibk.ac.at"]
+;	helper = !glab auth git-credential
+[user]
+	name = Geet Mankar
+	email = geetmankar21@gmail.com

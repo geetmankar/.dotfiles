@@ -1,0 +1,45 @@
+{
+  "extensions": {
+    "catppuccin": {
+      "manifest": {
+        "id": "catppuccin",
+        "name": "Catppuccin Themes",
+        "version": "0.2.1",
+        "description": "🦀 Soothing pastel theme for Zed",
+        "repository": "https://github.com/catppuccin/zed",
+        "authors": [
+          "Andrew Tec <andrewtec@enjoi.dev>"
+        ],
+        "lib": {
+          "kind": null
+        },
+        "themes": [
+          "themes/catppuccin.json"
+        ],
+        "languages": [],
+        "grammars": {},
+        "language_servers": {}
+      },
+      "dev": false
+    }
+  },
+  "themes": {
+    "Catppuccin Frappé": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin.json"
+    },
+    "Catppuccin Latte": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin.json"
+    },
+    "Catppuccin Macchiato": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin.json"
+    },
+    "Catppuccin Mocha": {
+      "extension": "catppuccin",
+      "path": "themes/catppuccin.json"
+    }
+  },
+  "languages": {}
+}

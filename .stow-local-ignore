@@ -1,0 +1,73 @@
+# Comments and blank lines are allowed.
+
+RCS
+.+,v
+
+CVS
+\.\#.+       # CVS conflict files / emacs lock files
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitignore
+\.gitmodules
+
+.+~          # emacs backup files
+\#.*\#       # emacs autosave files
+
+^/README.*
+^/LICENSE.*
+^/COPYING   return filepath_list
+
+# configs
+~/.config/alacritty
+~/.config/autostart
+~/.config/broot
+~/.config/btop
+~/.config/Code
+~/.config/cosmic
+~/.config/dconf
+~/.config/enchant
+~/.config/eog
+~/.config/evince
+~/.config/evolution
+~/.config/fish
+~/.config/font-manager
+~/.config/fontconfig
+~/.config/geary
+~/.config/gedit
+~/.config/gh
+~/.config/glab-cli
+~/.config/gnome-control-center
+~/.config/gnome-session
+~/.config/goa-1.0
+~/.config/gtk-3.0
+~/.config/gtk-4.0
+# ~/.config/helix
+~/.config/ibus
+~/.config/JetBrains
+~/.config/libreoffice
+~/.config/matplotlib
+~/.config/nautilus
+~/.config/neofetch
+# ~/.config/nvim
+~/.config/pop-shell
+~/.config/pop-system-updater
+~/.config/procps
+~/.config/pulse
+# ~/.config/tmux
+~/.config/totem
+~/.config/touchegg
+~/.config/warp-terminal
+# ~/.config/zed
+# ~/.config/zellij
+~/.config/dleyna-server-service.conf
+~/.config/gnome-initial-setup-done
+~/.config/mimeapps.list
+~/.config/monitors.xml
+# ~/.config/starship.toml
+~/.config/user-dirs.dirs
+~/.config/user-dirs.locale

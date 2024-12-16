@@ -1,0 +1,57 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "ssh_connections": [
+    {
+      "host": "euclid",
+      "username": "gmankar",
+      "projects": [
+        {
+          "paths": ["~/work/num_density"]
+        }
+      ],
+      "nickname": "euclid"
+    },
+    {
+      "host": "euclid01",
+      "username": "gmankar",
+      "args": ["-J", "gmankar@euclid"],
+      "projects": [
+        {
+          "paths": ["~/work/num_density"]
+        }
+      ]
+    },
+    {
+      "host": "euclid02",
+      "username": "gmankar",
+      "args": ["-J", "gmankar@euclid"],
+      "projects": [
+        {
+          "paths": ["~/work/num_density"]
+        }
+      ]
+    },
+    {
+      "host": "euclid03",
+      "username": "gmankar",
+      "args": ["-J", "gmankar@euclid"],
+      "projects": [
+        {
+          "paths": ["~/work/num_density"]
+        }
+      ]
+    }
+  ],
+  "theme": "Catppuccin Mocha",
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_font_family": "FiraCode Nerd Font Mono",
+  "vim_mode": true
+}

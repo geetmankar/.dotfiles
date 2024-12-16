@@ -1,0 +1,26 @@
+[user]
+	name = Geet Mankar
+
+[core]
+	editor = nvim
+	helper = !glab auth git-credential
+
+[credential "https://git.uibk.ac.at"]
+
+[credential "https://github.com"]
+	helper = !gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = !gh auth git-credential
+
+[includeIf "hasconfig:remote.*.url:git@github.com:**/**"]
+    path = ~/.gitconfig-personal
+
+[includeIf "hasconfig:remote.*.url:https://github.com/**/**"]
+    path = ~/.gitconfig-personal 
+
+[includeIf "hasconfig:remote.*.url:git@gitlab.com:**/**"]
+    path = ~/.gitconfig-work
+
+[includeIf "hasconfig:remote.*.url:https://gitlab.com/**/**"]
+    path = ~/.gitconfig-work 

@@ -1,0 +1,74 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // "shift shift": "file_finder::Toggle"
+      // "ctr-c": ["workspace::SendKeystrokes", "escape"]
+      "<space> n n": "project_panel::Open",
+      "<space> n e": "project_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // "j k": ["workspace::SendKeystrokes", "escape"]
+      "<space> f f": "file_finder::Toggle",
+      "<space> f g": "editor::FindAllReferences"
+    }
+  },
+  // VIM - - - - - - - - - - - -
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      // Put key bindings here if you want them to work in normal & visual mode.
+      "j": ["workspace::SendKeystrokes", "g j"],
+      "k": ["workspace::SendKeystrokes", "g k"],
+      // Copying up or down
+      "<alt-shift-Down>": ["workspace::SendKeystrokes", ":m '>+0<CR>gv=gv"],
+      "<alt-shift-Up>": ["workspace::SendKeystrokes", ":m '<-2<CR>gv=gv"],
+      "<alt-shift-j>": ["workspace::SendKeystrokes", ":m '>+1<CR>gv=gv"],
+      "<alt-shift-k>": ["workspace::SendKeystrokes", ":m '<-2<CR>gv=gv"],
+      // Moving text up or down
+      "<alt-Down>": ["workspace::SendKeystrokes", ":m '>+1<CR>gv=gv"],
+      "<alt-Up>": ["workspace::SendKeystrokes", ":m '<-2<CR>gv=gv"],
+      "<alt-j>": ["workspace::SendKeystrokes", ":m '>+1<CR>gv=gv"],
+      "<alt-k>": ["workspace::SendKeystrokes", ":m '<-2<CR>gv=gv"],
+      "<space> v": ["workspace::SendKeystrokes", "\"+p"],
+      "<space> p": ["workspace::SendKeystrokes", "\"_dp"],
+      "<space> y": ["workspace::SendKeystrokes", "\"+y"]
+    }
+  },
+  {
+    "context": "vim_mode == normal && !menu",
+    "bindings": {
+      "shift-y": ["workspace::SendKeystrokes", "y $"], // Use neovim's yank behavior: yank to end of line.
+      "<C-c>": ["workspace::SendKeystrokes", ":noh<CR>"]
+    }
+  },
+  {
+    "context": "vim_mode == visual && !menu",
+    "bindings": {}
+  },
+  {
+    "context": "vim_mode == insert",
+    "bindings": {
+      // "j k": "vim::NormalBefore" // In insert mode, make jk escape to normal mode.
+      "<C-c>": ["workspace::SendKeystrokes", "<Esc>"]
+    }
+  },
+  {
+    "context": "EmptyPane || SharedScreen",
+    "bindings": {
+      // Put key bindings here (in addition to the context above) if you want them to
+      // work when no editor exists.
+      "space f f": "file_finder::Toggle"
+    }
+  }
+]

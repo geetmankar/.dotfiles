@@ -1,0 +1,22 @@
+{
+  "prefs": {
+    "WorkflowsBoxOpen": "true",
+    "FontSize": "13.0",
+    "AliasExpansionBannerSeen": "true",
+    "ChangelogVersions": "{\"v0.2024.02.20.08.01.stable_02\":true,\"v0.2024.03.05.08.02.stable_00\":true}",
+    "ShouldDimInactivePanes": "true",
+    "ExperimentId": "ff4f85a8-e058-4ba2-9f5b-ceb43eedef89",
+    "AIAssistantRequestLimitInfo": "{\"limit\":100,\"num_requests_used_since_refresh\":0,\"next_refresh_time\":\"2024-02-27T13:13:41.690406Z\"}",
+    "PreferLowPowerGPU": "true",
+    "Theme": "\"CyberWave\"",
+    "HasAutoOpenedWelcomeFolder": "true",
+    "WelcomeTipsFeaturesUsed": "[{\"Hint\":\"CreateBlock\"},{\"Action\":\"AiCommandSearch\"},{\"Action\":\"CommandSearch\"}]",
+    "DismissedWarpAIWarmWelcome": "true",
+    "HonorPS1": "true",
+    "AutosuggestionAcceptedCount": "2",
+    "AliasExpansionEnabled": "false",
+    "ReceivedReferralTheme": "\"Inactive\"",
+    "Spacing": "\"Normal\"",
+    "Shortcuts": "true"
+  }
+}
