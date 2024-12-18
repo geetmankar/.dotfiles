@@ -185,14 +185,14 @@ eval "$(fzf --bash)"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/geet/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$("$HOME/miniconda3/bin/conda" 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/geet/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/geet/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/geet/miniconda3/bin:$PATH"
+        export PATH="$HOME/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -202,7 +202,7 @@ unset __conda_setup
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
 export MAMBA_EXE='/home/linuxbrew/.linuxbrew/Cellar/micromamba/1.5.6/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/home/geet/micromamba';
+export MAMBA_ROOT_PREFIX="$HOME/micromamba";
 __mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__mamba_setup"
@@ -212,5 +212,5 @@ fi
 unset __mamba_setup
 # <<< mamba initialize <<<
 
-source /home/geet/.config/broot/launcher/bash/br
+source "$HOME/.config/broot/launcher/bash/br"
 export PATH=$HOME/.local/bin:$PATH
