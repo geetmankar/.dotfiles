@@ -1,6 +1,6 @@
 # .dotfiles
 
-My dotfiles from Work
+My dotfiles from Work\
 Install **GNU Stow** before running this command
 
 ```sh
