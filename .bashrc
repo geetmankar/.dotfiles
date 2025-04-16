@@ -177,8 +177,6 @@ function extract {
 
 IFS=$SAVEIFS
 
-eval "$(zoxide init bash)"
-eval "$(starship init bash)"
 # fzf plugin for bash
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 eval "$(fzf --bash)"
@@ -214,3 +212,6 @@ unset __mamba_setup
 
 source "$HOME/.config/broot/launcher/bash/br"
 export PATH=$HOME/.local/bin:$PATH
+
+eval "$(zoxide init bash)"
+eval "$(starship init bash)"

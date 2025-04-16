@@ -60,5 +60,4 @@ function bind_key_ctrl() {
 export EDITOR=nvim
 export GIT_EDITOR=nvim
 
-complete -F _complete_alias nvim
 complete -F _complete_alias "${!BASH_ALIASES[@]}"
