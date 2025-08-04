@@ -199,7 +199,8 @@ unset __conda_setup
 
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
-export MAMBA_EXE='/home/linuxbrew/.linuxbrew/Cellar/micromamba/1.5.6/bin/micromamba';
+# export MAMBA_EXE='/home/linuxbrew/.linuxbrew/Cellar/micromamba/1.5.6/bin/micromamba';
+export MAMBA_EXE='/home/linuxbrew/.linuxbrew/bin/micromamba';
 export MAMBA_ROOT_PREFIX="$HOME/micromamba";
 __mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
 if [ $? -eq 0 ]; then
